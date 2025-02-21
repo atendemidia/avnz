@@ -60,9 +60,9 @@ a:active {
     background-size: auto;
     padding-bottom: 3rem;
 /* Rectangle 10: */
-background-image: -webkit-linear-gradient(44deg, #0C0091 0%, #00A87E 100%);
-background-image: -o-linear-gradient(44deg, #0C0091 0%, #00A87E 100%);
-background-image: linear-gradient(134deg, #0C0091 0%, #00A87E 100%);
+background-image: -webkit-linear-gradient(44deg, #000 0%, 4E342E000 100%);
+background-image: -o-linear-gradient(44deg, #000 0%, #4E342E 100%);
+background-image: linear-gradient(44deg, #000 0%, #4E342E 100%);
 }
 
 .yeo-slogan .slogan-bold {
@@ -320,13 +320,13 @@ background-image: linear-gradient(134deg, #0C0091 0%, #00A87E 100%);
 
 .yeo-work {
     padding: 4rem 0 1rem 0;
-    background: #0a007e;
+    background: #4E342E;
     color: #fff;
     background-size: cover;
 }
 
 .yeo-work-feature-bold {
-    color: #00ffd4;
+    color: #D7B899;
 }
 
 .yeo-work-img img {
