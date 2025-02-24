@@ -34,11 +34,14 @@ a:active {
 }
 
 .yeo-body {
-    max-width: 1280px;
+    max-width: 80%;
+	list-style:none;
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
 }
+
+.yeo-body li{list-style:none;}
 
 
 .navbar .navbar-brand.logo {
