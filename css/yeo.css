@@ -1,62 +1,4 @@
- .mobile-menu {
-            background-color: #000;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-
-        .menu-button {
-            font-size: 24px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            color: white;
-        }
-
-        .menu-content {
-            display: none;
-            background-color: #222;
-            padding: 15px;
-            position: absolute;
-            top: 50px;
-            left: 0;
-            width: 100%;
-        }
-
-        .menu-content a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 10px 0;
-            border-bottom: 1px solid #444;
-        }
-
-        .menu-content a:hover {
-            background-color: #444;
-        }
-
-        @media (min-width: 768px) {
-            .menu-content {
-                display: block !important;
-                position: relative;
-                top: 0;
-                background: none;
-                width: auto;
-                padding: 0;
-            }
-            .menu-content a {
-                display: inline-block;
-                padding: 10px;
-                border: none;
-            }
-            .menu-button {
-                display: none;
-            }
-        }
-		
-		/* Botão do menu */
+       /* Botão do menu */
         .menu-button {
             font-size: 24px;
             background: black;
@@ -71,6 +13,18 @@
             border-radius: 5px;
         }
 
+        /* Overlay para fechar ao clicar fora */
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 98;
+        }
+
         /* Dropdown oculto inicialmente */
         .menu-dropdown {
             display: none;
@@ -83,13 +37,14 @@
             border-radius: 5px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
             z-index: 99;
+            width: 250px;
         }
 
         .menu-dropdown a {
             display: block;
             color: white;
             text-decoration: none;
-            padding: 8px 0;
+            padding: 10px;
             border-bottom: 1px solid #444;
         }
 
@@ -99,20 +54,8 @@
 
         .menu-dropdown h4 {
             margin: 10px 0;
-            font-size: 16px;
+            font-size: 18px;
             color: #D7B899;
-        }
-
-        /* Fechar o menu ao clicar fora */
-        .menu-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 98;
         }
 
 

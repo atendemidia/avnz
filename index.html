@@ -177,6 +177,47 @@
                                 <img class="logo-img" src="./images/logo.png" alt=""><span>Avanzo</span>
                             </a>
                         </section>
+												<!-- Botão para abrir o menu -->
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+    <!-- Overlay para fechar ao clicar fora -->
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+    <!-- Menu Dropdown -->
+    <div class="menu-dropdown" id="menu">
+        <h4>Servicios</h4>
+        <a href="posicionamiento.html">Posicionamiento</a>
+        <a href="diseno.html">Diseño y Interfaz</a>
+        <a href="aplicaciones.html">Aplicaciones</a>
+
+        <h4>Trabajos</h4>
+        <a href="gastronomia.html">Gastronomía</a>
+        <a href="eventos.html">Eventos</a>
+
+        <h4>Contáctenos</h4>
+        <a href="https://linktr.ee/avanzocomunicacion">Contacto</a>
+        <a href="https://instagram.com/avanzocomunicacion">Instagram</a>
+        <a href="https://facebook.com/avanzocomunicacion">Facebook</a>
+    </div>
+
+     <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            var overlay = document.querySelector(".menu-overlay");
+
+            if (menu.style.display === "block") {
+                closeMenu();
+            } else {
+                menu.style.display = "block";
+                overlay.style.display = "block";
+            }
+        }
+
+        function closeMenu() {
+            document.getElementById("menu").style.display = "none";
+            document.querySelector(".menu-overlay").style.display = "none";
+        }
+    </script>
                         <section class="navbar-section hide-sm">
                             <a class="btn btn-link" href="#we-do">Qué hacemos</a>
 							<!--<a class="btn btn-link" href="#we-work">Cómo trabajamos</a>
