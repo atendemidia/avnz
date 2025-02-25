@@ -3,7 +3,7 @@
 /* Botão do menu */
         .menu-button {
             font-size: 24px;
-            background: black;
+            background: #4E342E;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -72,9 +72,9 @@
         .menu-dropdown h4 {
             margin: 15px 0 5px;
             font-size: 18px;
-            color: #ddd;
+            color: #D7B899;
         }	
-		#D7B899;
+		
         
 
 body {

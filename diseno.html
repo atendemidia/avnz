@@ -120,16 +120,16 @@
             var menu = document.getElementById("menu");
             var overlay = document.querySelector(".menu-overlay");
 
-            if (menu.style.display === "block") {
+            if (menu.classList.contains("active")) {
                 closeMenu();
             } else {
-                menu.style.display = "block";
+                menu.classList.add("active");
                 overlay.style.display = "block";
             }
         }
 
         function closeMenu() {
-            document.getElementById("menu").style.display = "none";
+            document.getElementById("menu").classList.remove("active");
             document.querySelector(".menu-overlay").style.display = "none";
         }
     </script>

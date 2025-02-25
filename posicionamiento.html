@@ -28,19 +28,21 @@
             var menu = document.getElementById("menu");
             var overlay = document.querySelector(".menu-overlay");
 
-            if (menu.style.display === "block") {
+            if (menu.classList.contains("active")) {
                 closeMenu();
             } else {
-                menu.style.display = "block";
+                menu.classList.add("active");
                 overlay.style.display = "block";
             }
         }
 
         function closeMenu() {
-            document.getElementById("menu").style.display = "none";
+            document.getElementById("menu").classList.remove("active");
             document.querySelector(".menu-overlay").style.display = "none";
         }
-    </script>							<section class="navbar-section hide-sm">								<!--<a class="btn btn-link" href="#we-do">Qué hacemos</a>								<a class="btn btn-link" href="#we-work">Cómo trabajamos</a>								<a class="btn btn-link" href="#price">Precios</a>								<a class="btn btn-link" href="#team">Nuestro equipo</a>-->								<a class="btn btn-primary btn-hire-me" href="analisis.html">Análisis gratuito</a>                        </section>                    </header>                </div>            </div>        </div>        </div>				<div class="yeo-work" id="we-work" style="padding:2rem 0 1rem 0;">            <div class="container yeo-body">                <div class="columns">                    <div class="column col-10 col-sm-12 centered">                        <h2 class="yeo-work-feature" style="font-size:35px;">                        Posicionamiento</h2><h2 class="yeo-work-feature" style=" margin-top:-15px;"> <span class="yeo-work-feature-bold">Digital</span>                    </h2>                    </div>    <section style="max-width: 100%; margin: auto;">
+    </script>
+
+	<section class="navbar-section hide-sm">								<!--<a class="btn btn-link" href="#we-do">Qué hacemos</a>								<a class="btn btn-link" href="#we-work">Cómo trabajamos</a>								<a class="btn btn-link" href="#price">Precios</a>								<a class="btn btn-link" href="#team">Nuestro equipo</a>-->								<a class="btn btn-primary btn-hire-me" href="analisis.html">Análisis gratuito</a>                        </section>                    </header>                </div>            </div>        </div>        </div>				<div class="yeo-work" id="we-work" style="padding:2rem 0 1rem 0;">            <div class="container yeo-body">                <div class="columns">                    <div class="column col-10 col-sm-12 centered">                        <h2 class="yeo-work-feature" style="font-size:35px;">                        Posicionamiento</h2><h2 class="yeo-work-feature" style=" margin-top:-15px;"> <span class="yeo-work-feature-bold">Digital</span>                    </h2>                    </div>    <section style="max-width: 100%; margin: auto;">
     <p>En nuestra agencia, te ayudamos a que tu negocio <strong>sea encontrado en internet por las personas adecuadas</strong>. A través de estrategias avanzadas de <strong>SEO, publicidad online, redes sociales y presencia en plataformas clave</strong>, optimizamos tu visibilidad y aumentamos tus oportunidades de venta.</p>
     
     <h2>🔎 SEO y Posicionamiento en Google</h2>
