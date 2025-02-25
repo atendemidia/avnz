@@ -1,4 +1,6 @@
-       /* Botão do menu */
+
+
+/* Botão do menu */
         .menu-button {
             font-size: 24px;
             background: black;
@@ -7,7 +9,7 @@
             padding: 10px 20px;
             cursor: pointer;
             position: fixed;
-            top: 15px;
+            top: 20px;
             right: 20px;
             z-index: 100;
             border-radius: 5px;
@@ -25,13 +27,16 @@
             z-index: 98;
         }
 
-        /* Dropdown oculto inicialmente */
+        /* Dropdown */
         .menu-dropdown {
-            display: none;
+            visibility: hidden; /* Em vez de display:none para evitar bug no Safari */
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
             position: fixed;
             top: 60px;
             right: 20px;
-            background-color: #000;
+            background-color: #222;
             color: white;
             padding: 15px;
             border-radius: 5px;
@@ -40,12 +45,24 @@
             width: 250px;
         }
 
+        /* Mostrar o menu quando ativado */
+        .menu-dropdown.active {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         .menu-dropdown a {
             display: block;
             color: white;
             text-decoration: none;
             padding: 10px;
+            margin-bottom: 5px; /* Adiciona espaçamento entre os itens */
             border-bottom: 1px solid #444;
+        }
+
+        .menu-dropdown a:last-child {
+            border-bottom: none;
         }
 
         .menu-dropdown a:hover {
@@ -53,11 +70,12 @@
         }
 
         .menu-dropdown h4 {
-            margin: 10px 0;
+            margin: 15px 0 5px;
             font-size: 18px;
-            color: #D7B899;
-        }
-
+            color: #ddd;
+        }	
+		#D7B899;
+        
 
 body {
     background: #fff;
