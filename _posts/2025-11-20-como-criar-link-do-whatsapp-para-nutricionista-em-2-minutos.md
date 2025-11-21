@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Como Criar Link do WhatsApp para Nutricionista em 2 Minutos"
-date: 2025-11-22 09:00:00 -0300
+date: 2025-11-20 09:00:00 -0300
 categories: marketing
 tags: [nutricionista, marketing digital, ebook]
 ---
