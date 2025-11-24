@@ -1,0 +1,42 @@
+<!-- _includes/auto-capa-manual.html -->
+{% raw %}{% assign content_no_frontmatter = content | split: '---' | last %}
+
+{% assign amazon_link = content_no_frontmatter | split: 'href="' | slice: 1 | split: '"' | first %}
+
+{% if amazon_link and amazon_link contains 'amazon.com.br' %}
+
+  {% assign titulo = page.title | default: page.name | replace: '.md', '' | replace: '-', ' ' %}
+
+  {% assign capa = 
+       titulo contains 'Restaurantes' or content contains 'Restaurantes' ? 'Restaurantes.jpg' :
+       titulo contains 'Academias' or content contains 'Academias' ? 'Academias.jpg' :
+       titulo contains 'Nutricionistas' or content contains 'Nutricionistas' ? 'Nutricionistas.jpg' :
+       titulo contains 'Pizzarias' or content contains 'Pizzarias' ? 'Pizzarias.jpg' :
+       titulo contains 'Pet' or content contains 'Pet' ? 'Petshops.jpg' :
+       titulo contains 'Salão' or titulo contains 'Salao' or content contains 'Salão' ? 'SalãodeBeleza.jpg' :
+       titulo contains 'Auto Escolas' or titulo contains 'AutoEscolas' or content contains 'Auto Escola' ? 'AutoEscolas.jpg' :
+       titulo contains 'Barbeiros' or content contains 'Barbeiros' ? 'Barbeiros.jpg' :
+       titulo contains 'Calçados' or content contains 'Calçados' ? 'Calçados.jpg' :
+       titulo contains 'Escolas' or content contains 'Escolas' ? 'Escolas.jpg' :
+       titulo contains 'Estética' or content contains 'Estética' ? 'Estética.jpg' :
+       titulo contains 'Hotéis' or titulo contains 'Hoteis' or content contains 'Hotéis' ? 'Hoteis.jpg' :
+       titulo contains 'Imobiliárias' or content contains 'Imobiliárias' ? 'Imobiliárias.jpg' :
+       titulo contains 'Odontologia' or content contains 'Odontologia' ? 'Odontologia.jpg' :
+       titulo contains 'Oficinas' or content contains 'Oficinas' ? 'Oficinas.jpg' :
+       titulo contains 'Óticas' or content contains 'Óticas' ? 'Óticas.jpg' :
+       titulo contains 'Panificadoras' or content contains 'Panificadoras' ? 'Panificadoras.jpg' :
+       titulo contains 'Roupas' or content contains 'Roupas' ? 'Roupas.jpg' :
+       titulo contains 'Técnicos' or content contains 'Técnicos' ? 'Técnicos.jpg' : '' %}
+
+  {% if capa != '' %}
+    <p style="text-align:center; margin: 50px 0 40px 0;">
+      <a href="{{ amazon_link }}" target="_blank">
+        <img src="/img/{{ capa }}" 
+             alt="Capa do Manual do Marketing" 
+             style="width:300px; height:auto; border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,0.2); transition:all .3s ease;"
+             onmouseover="this.style.transform='scale(1.06)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.3)'"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.2)'">
+      </a>
+    </p>
+  {% endif %}
+{% endif %}{% endraw %}
