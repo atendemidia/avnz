@@ -29,7 +29,7 @@ Neste mini-guia você vai aprender o passo a passo completo para colocar em prá
 
 <div class="capa-wrapper">
   <a href="https://www.amazon.com.br/Manual-Marketing-Para-Nutricionistas-Conquistar-ebook/dp/B0CLVJXB1M" target="_blank">
-    <img src="img/Nutricionistas.jpg" alt="Capa do Manual do Marketing Para Nutricionistas" loading="lazy">
+    <img src="https://avanzo.digital/img/Nutricionistas.jpg" alt="Capa do Manual do Marketing Para Nutricionistas" loading="lazy">
   </a>
   <div>
     <strong>Manual do Marketing Para Nutricionistas</strong><br>
