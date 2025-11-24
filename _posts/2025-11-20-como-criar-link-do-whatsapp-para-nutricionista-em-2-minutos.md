@@ -27,6 +27,17 @@ Neste mini-guia você vai aprender o passo a passo completo para colocar em prá
 </a>
 </p>
 
+<div class="capa-wrapper">
+  <a href="https://www.amazon.com.br/Manual-Marketing-Para-Nutricionistas-Conquistar-ebook/dp/B0CLVJXB1M" target="_blank">
+    <img src="img/Nutricionistas.jpg" alt="Capa do Manual do Marketing Para Nutricionistas" loading="lazy">
+  </a>
+  <div>
+    <strong>Manual do Marketing Para Nutricionistas</strong><br>
+    O manual mais completo do Brasil para nutricionista.<br>
+    Mais de 100 páginas de estratégias testadas.
+  </div>
+</div>
+
 **Sobre o Manual do Marketing Para Nutricionistas**
 
 Lotar a agenda de consultas. Apareça para “nutricionista em Salvador”, “dieta para emagrecer”, use Instagram para dicas, link WhatsApp para agendamento e ChatGPT para planos alimentares. Perfeito para nutricionistas clínicas e esportivas.
